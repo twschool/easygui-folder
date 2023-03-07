@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+</head>
+<body>
+    <form method="POST" action="{{ url_for('submit') }}">
+        <label for="user_input">Enter your input:</label>
+        <input type="text" id="user_input" name="user_input">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if user_input %}
+        <h1>You submitted:</h1>
+        <p>{{ user_input }}</p>
+    {% endif %}
+</body>
+</html>

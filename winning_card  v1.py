@@ -23,9 +23,11 @@ while True:
         msg = "The user has tied"
     else:
         msg = "I am so confused"
-    buttonbox(msg=f"{msg}\nThe user had the {user_card} of {user_choice}\n"
-                  f"The computer had the {computer_card} of {computer_choice}",
-              choices=["Play again", "Exit"], title="Round result")
+    game = buttonbox(msg=f"{msg}\nThe user had the {user_card} of {user_choice}\n"
+                         f"The computer had the {computer_card} of {computer_choice}",
+                     choices=["Play again", "Exit"], title="Round result")
+    if game == "Exit":
+        exit()
 
 
 

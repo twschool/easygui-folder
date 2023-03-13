@@ -1,4 +1,5 @@
 from random import choice
+from random import choice
 from easygui import buttonbox
 
 card_list = ["two", "three", "four", "five", "six", "seven", "eight",

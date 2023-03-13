@@ -6,3 +6,4 @@ if ok == nz_word:
     eg.msgbox("Same")
 else:
     eg.msgbox(f"Different: Old word ({nz_word}) New word ({ok})")
+# Change
